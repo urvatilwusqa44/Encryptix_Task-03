@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Roboto&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+background-image: url(calculator.jpg);
+background-position: center;
+background-size: cover;
+
+}
+h1{
+    margin-top: 80px;
+    text-align: center;
+    color:orange;
+    
+}
+
+.container{
+  margin-top: 100px;
+    width: 20%;
+    height: 60vh;
+    background-color:beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 2px solid orange;
+    box-shadow: 0px 0px 20px rgb(245, 175, 47);
+   
+    
+}
+.row{
+    margin: 0 8px;
+}
+
+.btn,.btn-last,.btn-orange{
+    width: 50px;
+    height: 50px;
+    margin: 5px 0; 
+    border-radius: 50%;
+    border: 2px solid orange;
+    cursor: pointer;
+    background-color:beige;
+    font-size: 18px;
+    color:black;
+    
+    
+}
+.btn-last{
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 25px;
+    padding: 0 50px;
+    border: 2px solid orange;
+    cursor: pointer;
+    background-color:beige;
+    font-size: 18px;  
+    color: black;
+    
+}
+.btn-orange{
+   
+    background-color: orange;
+ 
+}
+
+
+.input{
+    margin: 1px 1px;
+    padding: 15px 0;
+    background-color:beige;
+    border: 2px solid orange;
+    font-size: 18px;
+    border-radius: 15px;
+    color:black;
+}
+.input:active{
+    border-color:beige;
+}
+/* Media Query for smaller screens */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: 70vh;
+    }
+}
+
+
+/* Media Query for tablet screens */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        height: 75vh;
+        padding: 20px;
+    }
+
+    .btn, .btn-grey, .btn-last, .btn-orange {
+        width: 70px;
+        height: 70px;
+        font-size: 22px;
+    }
+
+    .btn-last {
+        width: 70px;
+        height: 70px;
+        padding: 0 70px;
+    }
+
+    .input {
+        margin: 5px 0;
+        padding: 35px 0;
+        font-size: 22px;
+    }
+}
